@@ -4,6 +4,43 @@ html {
   margin: 0;
   box-sizing: border-box;
   font-family: "Overpass", sans-serif;
+  background-color: hsl(0, 0%, 0%);
+}
+
+main {
+  background-color: hsl(216, 12%, 8%);
+  width: 95%;
+  margin: 5% auto;
+  padding: 5% 7%;
+  border-radius: 15px;
+}
+
+.star-icon {
+  background-color: hsl(213, 19%, 18%);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+}
+
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 36px;
+  padding: 16px;
+  width: 90%;
+
+  text-transform: uppercase;
+}
+
+.thank-you {
+  display: none;
 }
 
 .attribution {
@@ -11,5 +48,6 @@ html {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
 }

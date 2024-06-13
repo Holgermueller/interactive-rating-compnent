@@ -28,6 +28,8 @@
     <!-- Rating state start -->
     <main>
       <section>
+        <img class="star-icon" src="images/icon-star.svg" alt="Star icon" />
+
         <h1>How did we do?</h1>
 
         <p>
@@ -45,10 +47,18 @@
           id=""
         /><input type="radio" name="" id="" />
 
-        <button type="submit">Submit</button>
+        <button
+          class="submit"
+          id="submitRating"
+          title="Continue here after you've submitted your rating"
+          type="submit"
+          onclick="submitRating()"
+        >
+          Submit
+        </button>
       </section>
 
-      <section>
+      <section class="thank-you">
         <!-- Rating state end -->
 
         <!-- Thank you state start -->
@@ -72,11 +82,18 @@
 
     <!-- Thank you state end -->
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://holgermueller.github.io/portfolio/" target="_blank"
+          >Holger Mueller</a
+        >.
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
