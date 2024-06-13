@@ -133,6 +133,7 @@ p {
     border-radius: 50%;
   }
 
+  .rating-container:has(+ .rating-container:hover),
   .rating-container:hover + .rating-container label {
     border-radius: 50%;
     background: hsl(0, 0%, 100%);
