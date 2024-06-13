@@ -12,7 +12,7 @@ main {
   background-color: hsl(216, 12%, 8%);
   width: 95%;
   margin: 5% auto;
-  padding: 5% 7%;
+  padding: 7% 3%;
   border-radius: 15px;
 }
 
@@ -66,7 +66,6 @@ p {
 
 .rating-container input[type="radio"] {
   opacity: 0.011;
-  z-index: 100;
 }
 
 .rating-container input[type="radio"]:checked + label {
@@ -115,4 +114,34 @@ p {
 .attribution a {
   color: hsl(0, 0%, 100%);
   text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    margin: 1% auto;
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  label:hover {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 0%);
+    border-radius: 50%;
+  }
+
+  .rating-container:hover + .rating-container label {
+    border-radius: 50%;
+    background: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 8%);
+  }
+
+  .submit:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 8%);
+  }
 }

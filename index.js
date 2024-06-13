@@ -1,5 +1,10 @@
 "use strict";
 
 const submitRating = () => {
-  console.log("submitted");
+  let rating = document.querySelector('input[name="rating"]:checked').value;
+  console.log(rating);
+
+  document.getElementById("ratingForm").style.display = "none";
+  document.getElementById("thankYou").style.display = "block";
+  document.getElementById("rating").innerHTML = rating;
 };
