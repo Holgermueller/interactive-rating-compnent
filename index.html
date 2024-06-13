@@ -27,7 +27,7 @@
   <body>
     <!-- Rating state start -->
     <main>
-      <section>
+      <section class="rating-form">
         <img class="star-icon" src="images/icon-star.svg" alt="Star icon" />
 
         <h1>How did we do?</h1>
@@ -37,33 +37,54 @@
           is appreciated to help us improve our offering!
         </p>
 
-        <input type="radio" name="" id="" /><input
-          type="radio"
-          name=""
-          id=""
-        /><input type="radio" name="" id="" /><input
-          type="radio"
-          name=""
-          id=""
-        /><input type="radio" name="" id="" />
+        <div class="rating-buttons">
+          <div class="rating-container">
+            <input type="radio" name="rating" id="one" value="1" />
+            <label for="one">1</label>
+          </div>
 
-        <button
-          class="submit"
-          id="submitRating"
-          title="Continue here after you've submitted your rating"
-          type="submit"
-          onclick="submitRating()"
-        >
-          Submit
-        </button>
+          <div class="rating-container">
+            <input type="radio" name="rating" id="two" value="2" />
+            <label for="two">2</label>
+          </div>
+
+          <div class="rating-container">
+            <input type="radio" name="rating" id="three" value="3" />
+            <label for="three">3</label>
+          </div>
+
+          <div class="rating-container">
+            <input type="radio" name="rating" id="four" value="4" />
+            <label for="four">4</label>
+          </div>
+
+          <div class="rating-container">
+            <input type="radio" name="rating" id="five" value="5" />
+            <label for="five">5</label>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button
+            class="submit"
+            id="submitRating"
+            title="Continue here after you've submitted your rating"
+            type="submit"
+            onclick="submitRating()"
+          >
+            Submit
+          </button>
+        </div>
       </section>
 
       <section class="thank-you">
-        <!-- Rating state end -->
+        <img
+          class="thank-you-image"
+          src="images/illustration-thank-you.svg"
+          alt="Image illustrating that we've received your rating"
+        />
 
-        <!-- Thank you state start -->
-
-        <p>
+        <p class="rating-submitted">
           You selected
           <!-- Add rating here -->
           out of 5
@@ -77,10 +98,6 @@
         </p>
       </section>
     </main>
-
-    1 2 3 4 5
-
-    <!-- Thank you state end -->
 
     <footer class="attribution">
       <p>
